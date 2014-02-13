@@ -21,6 +21,9 @@
 		41F0698B18AD25A300DEF6EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41F0696D18AD25A300DEF6EC /* UIKit.framework */; };
 		41F0699318AD25A400DEF6EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41F0699118AD25A400DEF6EC /* InfoPlist.strings */; };
 		41F0699518AD25A400DEF6EC /* GetStationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F0699418AD25A400DEF6EC /* GetStationsTests.m */; };
+		41F069A018AD277600DEF6EC /* StationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F0699F18AD277600DEF6EC /* StationManager.m */; };
+		41F069A218AD285C00DEF6EC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41F069A118AD285C00DEF6EC /* CoreLocation.framework */; };
+		41F069A518AD46BA00DEF6EC /* StationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F069A418AD46BA00DEF6EC /* StationsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		41F0699018AD25A400DEF6EC /* GetStationsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GetStationsTests-Info.plist"; sourceTree = "<group>"; };
 		41F0699218AD25A400DEF6EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		41F0699418AD25A400DEF6EC /* GetStationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetStationsTests.m; sourceTree = "<group>"; };
+		41F0699E18AD277600DEF6EC /* StationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationManager.h; sourceTree = "<group>"; };
+		41F0699F18AD277600DEF6EC /* StationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationManager.m; sourceTree = "<group>"; };
+		41F069A118AD285C00DEF6EC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		41F069A318AD46BA00DEF6EC /* StationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationsTableViewController.h; sourceTree = "<group>"; };
+		41F069A418AD46BA00DEF6EC /* StationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41F069A218AD285C00DEF6EC /* CoreLocation.framework in Frameworks */,
 				41F0696C18AD25A300DEF6EC /* CoreGraphics.framework in Frameworks */,
 				41F0696E18AD25A300DEF6EC /* UIKit.framework in Frameworks */,
 				41F0696A18AD25A300DEF6EC /* Foundation.framework in Frameworks */,
@@ -101,6 +110,7 @@
 		41F0696818AD25A300DEF6EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				41F069A118AD285C00DEF6EC /* CoreLocation.framework */,
 				41F0696918AD25A300DEF6EC /* Foundation.framework */,
 				41F0696B18AD25A300DEF6EC /* CoreGraphics.framework */,
 				41F0696D18AD25A300DEF6EC /* UIKit.framework */,
@@ -117,6 +127,10 @@
 				41F0697B18AD25A300DEF6EC /* Main.storyboard */,
 				41F0697E18AD25A300DEF6EC /* ViewController.h */,
 				41F0697F18AD25A300DEF6EC /* ViewController.m */,
+				41F069A318AD46BA00DEF6EC /* StationsTableViewController.h */,
+				41F069A418AD46BA00DEF6EC /* StationsTableViewController.m */,
+				41F0699E18AD277600DEF6EC /* StationManager.h */,
+				41F0699F18AD277600DEF6EC /* StationManager.m */,
 				41F0698118AD25A300DEF6EC /* Images.xcassets */,
 				41F0697018AD25A300DEF6EC /* Supporting Files */,
 			);
@@ -249,6 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41F069A518AD46BA00DEF6EC /* StationsTableViewController.m in Sources */,
+				41F069A018AD277600DEF6EC /* StationManager.m in Sources */,
 				41F0698018AD25A300DEF6EC /* ViewController.m in Sources */,
 				41F0697A18AD25A300DEF6EC /* AppDelegate.m in Sources */,
 				41F0697618AD25A300DEF6EC /* main.m in Sources */,

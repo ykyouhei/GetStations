@@ -7,9 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "StationManager.h"
+#import "StationsTableViewController.h"
 
 @interface ViewController ()
-
+@property (strong, nonatomic) NSArray *stations;
 @end
 
 @implementation ViewController
@@ -25,5 +27,21 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"showStations"]) {
+        StationsTableViewController *nextVC = segue.destinationViewController;
+        nextVC.stations = self.stations;
+    }
+}
+
+- (IBAction)requestStations:(UIButton *)sender {
+    [[StationManager sharedManager] requestNearestStations:^(NSArray *stations, NSError *error) {
+        self.stations = stations;
+        [self performSegueWithIdentifier:@"showStations" sender:self];
+    }];
+}
+
 
 @end
